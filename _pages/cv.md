@@ -39,6 +39,7 @@ Bioengineering Graduate Research Symposium, UIUC
 2022 — Panel
 Flying Across the Ocean: overseas research experiences.
 USTC, Hefei, China
+
 Teaching
 ======
 Teaching Assistant — BIOE 486
