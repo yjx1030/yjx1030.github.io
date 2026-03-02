@@ -37,7 +37,7 @@ redirect_from:
 
 \* indicates co-first authors  
 
-1. J. Yi*, F. Xie*, J. Q. Moller*, Z. Xu, S. Zhao, Y. Diao, A. D. B. Leakey, J. S. Moore, Y.-S. Chen. "**Ultrasound-driven mechanophore activation in living plants.**" **Proceedings of the National Academy of Sciences of the United States of America (PNAS)** (in press).  
+1. J. Yi\*, F. Xie\*, J. Q. Moller\*, Z. Xu, S. Zhao, Y. Diao, A. D. B. Leakey, J. S. Moore, Y.-S. Chen. "**Ultrasound-driven mechanophore activation in living plants.**" **Proceedings of the National Academy of Sciences of the United States of America (PNAS)** (in press).  
 
 2. S. Zhao, J. Yi, Y. Qiu, Z. Huang, Y.-S. Chen. "**Photo-activated ultrasound localization imaging with laser-activated nanodroplets.**" **Communications Engineering** (2026). DOI: 10.1038/s44172-026-00592-w.  
 
@@ -48,9 +48,10 @@ redirect_from:
 
 5. S. Zhao, S. Paul, J. Yi, Y.-S. Chen. "**Dual modal photoacoustic/fast ultrasound localization imaging.**" **Bio-protocol** (2025). DOI: 10.21769/BioProtoc.5247.  
 
-6. J. Wang, S. Zhao, J. Yi, Y. Sun, M. Agrawal, M. L. Oelze, K. Li, J. Moore, Y.-S. Chen. "**Injectable mechanophore nanoparticles for deep-tissue mechanochemical dynamic therapy.**" **ACS Nano** (2024). DOI: 10.1021/acsnano.4c04090.  
+6. J. Wang\*, S. Zhao\*, J. Yi\*, Y. Sun, M. Agrawal, M. L. Oelze, K. Li, J. Moore, Y.-S. Chen. "**Injectable mechanophore nanoparticles for deep-tissue mechanochemical dynamic therapy.**" **ACS Nano** (2024). DOI: 10.1021/acsnano.4c04090.
+7. ![](/images/injectable.jpeg)  
 
-7. X. Hu*, Y. Xu*, J. Yi, C. Wang, Z. Zhu, T. Yue, H. Zhang, X. Wang, F. Wu, L. Bai, H. Liu, Q. Chen. "**Using protein design to monomerize a bright near-infrared fluorescent protein.**" **ACS Synthetic Biology** (2024). DOI: 10.1021/acssynbio.3c00643.  
+8. X. Hu\*, Y. Xu\*, J. Yi\*, C. Wang, Z. Zhu, T. Yue, H. Zhang, X. Wang, F. Wu, L. Bai, H. Liu, Q. Chen. "**Using protein design to monomerize a bright near-infrared fluorescent protein.**" **ACS Synthetic Biology** (2024). DOI: 10.1021/acssynbio.3c00643.  
 ---
 
 ## Conference Presentations
