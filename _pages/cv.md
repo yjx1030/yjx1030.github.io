@@ -52,6 +52,8 @@ redirect_from:
   ![](/images/injectable.jpeg)  
 
 7. X. Hu\*, Y. Xu\*, J. Yi\*, C. Wang, Z. Zhu, T. Yue, H. Zhang, X. Wang, F. Wu, L. Bai, H. Liu, Q. Chen. "**Using protein design to monomerize a bright near-infrared fluorescent protein.**" **ACS Synthetic Biology** (2024). DOI: 10.1021/acssynbio.3c00643.
+
+
 ---
 
 ## Conference Presentations
