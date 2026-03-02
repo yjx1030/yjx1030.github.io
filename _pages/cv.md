@@ -111,8 +111,3 @@ redirect_from:
 
 ---
 
-## References
-
-
-* **Prof. Yun-Sheng Chen** – [yunsheng@illinois.edu](mailto:yunsheng@illinois.edu) 
-* **Prof. Jeffrey S. Moore** – [jsmoore@illinois.edu](mailto:jsmoore@illinois.edu)
