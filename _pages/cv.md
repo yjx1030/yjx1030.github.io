@@ -9,13 +9,6 @@ redirect_from:
 
 {% include base_path %}
 
-# Junxi Yi
-
-
-**Ph.D. Student, Bioengineering (UIUC)**  
-📧 [junxiyi2@illinois.edu](mailto:junxiyi2@illinois.edu) | 📞 (447) 902-0907  
-📍 2313 Beckman Institute, 405 North Mathews Avenue, Urbana, Illinois 61801, USA  
-🔗 [Google Scholar] | [ORCID] 
 
 ---
 
@@ -42,16 +35,22 @@ redirect_from:
 
 ## Publications
 
-*\* indicates co-first authors* 
+\* indicates co-first authors  
 
-1. J. $Yi^*$, F. Xie*, J. Q. Moller*, Z. Xu, S. Zhao, Y. Diao, A. D. B. Leakey, J. S. Moore, Y.-S. Chen. "**Ultrasound-driven mechanophore activation in living plants.**" *Proceedings of the National Academy of Sciences of the United States of America (PNAS)* (in press). 
-2. S. Zhao, J. Yi, Y. Qiu, Z. Huang, Y.-S. Chen. "**Photo-activated ultrasound localization imaging with laser-activated nanodroplets.**" *Communications Engineering* (2026). DOI: 10.1038/s44172-026-00592-w. 
-3. J. Yi, M. Chauhan, Y. Zhao, Y.-S. Chen. "**Near-infrared-triggered nanodroplets for macrophage-targeted cancer immunotherapy.**" *Small Methods* (2025). DOI: 10.1002/smtd.202401679. (**Frontispiece paper**) 
-4. J. Yi, Y.-S. Chen. "**How can nanotechnology be leveraged to produce multifunctional contrast agents to improve imaging and diagnostics?**" *Nanomedicine* (2025). DOI: 10.1080/17435889.2025.2501515. 
-5. S. Zhao, S. Paul, J. Yi, Y.-S. Chen. "**Dual modal photoacoustic/fast ultrasound localization imaging.**" *Bio-protocol* (2025). DOI: 10.21769/BioProtoc.5247. 
-6. J. Wang, S. Zhao, J. Yi, Y. Sun, M. Agrawal, M. L. Oelze, K. Li, J. Moore, Y.-S. Chen. "**Injectable mechanophore nanoparticles for deep-tissue mechanochemical dynamic therapy.**" *ACS Nano* (2024). DOI: 10.1021/acsnano.4c04090. 
-7. X. $Hu^*$, Y. $Xu^*$, J. Yi, C. Wang, Z. Zhu, T. Yue, H. Zhang, X. Wang, F. Wu, L. Bai, H. Liu, Q. Chen. "**Using protein design to monomerize a bright near-infrared fluorescent protein.**" *ACS Synthetic Biology* (2024). DOI: 10.1021/acssynbio.3c00643. 
+1. J. Yi*, F. Xie*, J. Q. Moller*, Z. Xu, S. Zhao, Y. Diao, A. D. B. Leakey, J. S. Moore, Y.-S. Chen. "**Ultrasound-driven mechanophore activation in living plants.**" **Proceedings of the National Academy of Sciences of the United States of America (PNAS)** (in press).  
 
+2. S. Zhao, J. Yi, Y. Qiu, Z. Huang, Y.-S. Chen. "**Photo-activated ultrasound localization imaging with laser-activated nanodroplets.**" **Communications Engineering** (2026). DOI: 10.1038/s44172-026-00592-w.  
+
+3. J. Yi, M. Chauhan, Y. Zhao, Y.-S. Chen. "**Near-infrared-triggered nanodroplets for macrophage-targeted cancer immunotherapy.**" **Small Methods** (2025). DOI: 10.1002/smtd.202401679. (*Frontispiece paper*)  
+![](/images/small_methods.png)
+
+4. J. Yi, Y.-S. Chen. "**How can nanotechnology be leveraged to produce multifunctional contrast agents to improve imaging and diagnostics?**" **Nanomedicine** (2025). DOI: 10.1080/17435889.2025.2501515.  
+
+5. S. Zhao, S. Paul, J. Yi, Y.-S. Chen. "**Dual modal photoacoustic/fast ultrasound localization imaging.**" **Bio-protocol** (2025). DOI: 10.21769/BioProtoc.5247.  
+
+6. J. Wang, S. Zhao, J. Yi, Y. Sun, M. Agrawal, M. L. Oelze, K. Li, J. Moore, Y.-S. Chen. "**Injectable mechanophore nanoparticles for deep-tissue mechanochemical dynamic therapy.**" **ACS Nano** (2024). DOI: 10.1021/acsnano.4c04090.  
+
+7. X. Hu*, Y. Xu*, J. Yi, C. Wang, Z. Zhu, T. Yue, H. Zhang, X. Wang, F. Wu, L. Bai, H. Liu, Q. Chen. "**Using protein design to monomerize a bright near-infrared fluorescent protein.**" **ACS Synthetic Biology** (2024). DOI: 10.1021/acssynbio.3c00643.  
 ---
 
 ## Conference Presentations
