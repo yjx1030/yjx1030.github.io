@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: ""
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -49,9 +49,9 @@ redirect_from:
 5. S. Zhao, S. Paul, J. Yi, Y.-S. Chen. "**Dual modal photoacoustic/fast ultrasound localization imaging.**" **Bio-protocol** (2025). DOI: 10.21769/BioProtoc.5247.  
 
 6. J. Wang\*, S. Zhao\*, J. Yi\*, Y. Sun, M. Agrawal, M. L. Oelze, K. Li, J. Moore, Y.-S. Chen. "**Injectable mechanophore nanoparticles for deep-tissue mechanochemical dynamic therapy.**" **ACS Nano** (2024). DOI: 10.1021/acsnano.4c04090.
-7. ![](/images/injectable.jpeg)  
+  ![](/images/injectable.jpeg)  
 
-8. X. Hu\*, Y. Xu\*, J. Yi\*, C. Wang, Z. Zhu, T. Yue, H. Zhang, X. Wang, F. Wu, L. Bai, H. Liu, Q. Chen. "**Using protein design to monomerize a bright near-infrared fluorescent protein.**" **ACS Synthetic Biology** (2024). DOI: 10.1021/acssynbio.3c00643.  
+7. X. Hu\*, Y. Xu\*, J. Yi\*, C. Wang, Z. Zhu, T. Yue, H. Zhang, X. Wang, F. Wu, L. Bai, H. Liu, Q. Chen. "**Using protein design to monomerize a bright near-infrared fluorescent protein.**" **ACS Synthetic Biology** (2024). DOI: 10.1021/acssynbio.3c00643.
 ---
 
 ## Conference Presentations
@@ -73,32 +73,20 @@ redirect_from:
 
 ---
 
-## Research Experience
-
-
-* **2022 – Present: Research Assistant, University of Illinois at Urbana-Champaign** 
-    * Developed ultrasound-responsive mechanophore nanocarriers and imaging-guided actuation strategies for controlled drug release and cancer therapy. 
-    * Built bubble-nucleation and gas-vesicle integration methods to improve activation efficiency and localization; mentored an undergraduate researcher. 
-* **July – Oct 2021: Research Intern, University of Edinburgh** 
-    * Designed plant E3 ubiquitin ligases to degrade pathogen effectors and improve plant immunity. 
-* **July – Oct 2020: Research Intern, McMaster University** 
-    * Developed a machine-learning method for molecular potential energy surface calculations. 
-
----
 
 ## Teaching Experience
 
 
 * **Spring 2026: Teaching Assistant, BIOE 486 (Applied Deep Learning in Biomedical Imaging)** 
-    * Developed and graded assignments; supported PyTorch-based imaging pipelines in office hours. 
+
 * **Spring 2026; Fall 2025: Teaching Assistant, BIOE 303 (Quantitative Physiology Lab)** 
-    * Led lab/discussion sections; graded reports and provided feedback on analysis and writing. 
+
 * **Fall 2025: Teaching Assistant, NE 431 (Neural Engineering Lab)** 
-    * Supported lab instruction and troubleshooting; graded assignments and reports. 
+   
 * **Spring 2025; Fall 2024: Teaching Assistant, BIOE 210 (Linear Algebra for Biomedical Data Science)** 
-    * Delivered lectures; built slides and MATLAB demos; hosted weekly office hours. 
+  
 * **Fall 2023: Teaching Assistant, BIOE 306 (Biofabrication)** 
-    * Led 3D bioprinting/biomaterial fabrication labs; assisted with setup and data analysis. 
+
 
 ---
 
