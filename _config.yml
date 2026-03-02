@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : " "
+title                    : " Homepage"
 title_separator          : "-"
 name                     : &name "Junxi Yi"
 description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -24,10 +24,10 @@ repository               : "yjx1030.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Junxi Yi"
+  name             : "Junxi Yi (易俊希）"
   pronouns         :
-  bio              : "Bioengineering PhD (UIUC). I develop ultrasound-triggered mechanochemical systems and nanomedicine for spatiotemporally controlled therapy and immunomodulation."
-  location         : "Urbana-Champaign, IL, USA"
+  bio              : " PhD candidate in Bioengineering, UIUC"
+  location         : "Urbana, IL, USA"
   employer         : "University of Illinois Urbana-Champaign"
   uri              :
   email            : "junxiyi2@illinois.edu"
@@ -42,7 +42,7 @@ author:
   orcid            : "https://orcid.org/0000-0001-5274-9513"
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : 
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
@@ -52,7 +52,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : 
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
