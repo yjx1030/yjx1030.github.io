@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number3"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+
+excerpt: "Laser-activated nanodroplets loaded with immunostimulants and imaging agents enable spatiotemporal control of macrophage reprogramming and real-time photoacoustic/ultrasound tracking, offering a precision theragnostic platform for cancer immunotherapy<br/><img src='/small_methods.png'>"
 collection: portfolio
 ---
 
