@@ -11,35 +11,14 @@ redirect_from:
 
 Education
 ======
-* Ph.D in xxxxxx Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+Ph.D. in Bioengineering
+University of Illinois at Urbana–Champaign (UIUC)
+2022–Present
+Advisor: Yun-Sheng Chen, Ph.D.
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+B.Sc. in Chemical Biology
+University of Science and Technology of China (USTC)
+2018–2022
 
 Publications
 ======
@@ -49,16 +28,48 @@ Publications
   
 Talks
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
+2025 — Talk
+Near-infrared-triggered nanodroplets for macrophage-targeted cancer immunotherapy.
+Mechanochemical Dynamic Therapy Workshop, Cancer Center at Illinois, Urbana, IL
+
+2024 — Talk
+Injectable mechanophore nanoparticles for deep-tissue mechanochemical dynamic therapy.
+Bioengineering Graduate Research Symposium, UIUC
+
+2022 — Panel
+Flying Across the Ocean: overseas research experiences.
+USTC, Hefei, China
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+Teaching Assistant — BIOE 486
+
+Applied Deep Learning in Biomedical Imaging
+Spring 2026
+
+Developed and graded assignments
+
+Supported PyTorch-based imaging pipelines
+
+Teaching Assistant — BIOE 303
+
+Quantitative Physiology Lab
+Spring 2026; Fall 2025
+
+Led lab sections
+
+Graded reports and delivered structured feedback
+
+Teaching Assistant — NE 431
+
+Neural Engineering Lab
+Fall 2025
+
+Teaching Assistant — BIOE 210
+
+Linear Algebra for Biomedical Data Science
+Spring 2025; Fall 2024
+
+Teaching Assistant — BIOE 306
+
+Biofabrication
+Fall 2023
