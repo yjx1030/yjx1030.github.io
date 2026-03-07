@@ -37,7 +37,7 @@ redirect_from:
 
 \* indicates co-first authors  
 
-1. J. Yi\*, F. Xie\*, J. Q. Moller\*, Z. Xu, S. Zhao, Y. Diao, A. D. B. Leakey, J. S. Moore, Y.-S. Chen. "**Ultrasound-driven mechanophore activation in living plants.**" **Proceedings of the National Academy of Sciences of the United States of America (PNAS)** (in press).  
+1. J. Yi\*, F. Xie\*, J. Q. Moller\*, Z. Xu, S. Zhao, Y. Diao, A. D. B. Leakey, J. S. Moore, Y.-S. Chen. "**Ultrasound-driven mechanophore activation in living plants.**" **Proceedings of the National Academy of Sciences of the United States of America (PNAS)**. DOI: 10.1073/pnas.2533066123.  
 
 2. S. Zhao, J. Yi, Y. Qiu, Z. Huang, Y.-S. Chen. "**Photo-activated ultrasound localization imaging with laser-activated nanodroplets.**" **Communications Engineering** (2026). DOI: 10.1038/s44172-026-00592-w.  
 
