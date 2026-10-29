@@ -1,0 +1,702 @@
+---
+layout: null
+permalink: /
+sitemap: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Junxi Yi</title>
+<meta name="description" content="Junxi Yi (易俊希). Engineering molecular systems with physical forces. Ph.D. candidate in Bioengineering, University of Illinois Urbana-Champaign.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Concept: FOCUS. A Swiss-grid academic poster. Klein-blue linework on white;
+   the hero is a live focused-ultrasound field, and one full-bleed blue band carries the research identity. */
+:root{
+  --paper:#FCFCFB;
+  --ink:#0B0C0E;
+  --grey:#6A6E75;
+  --rule:#E2E3E5;
+  --blue:#1034E0;
+  --blue-deep:#0A23A8;
+  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --serif:"Newsreader","Iowan Old Style",Georgia,"Songti SC",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --gutter:clamp(16px,3.2vw,48px);
+  --maxw:1320px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.55;font-optical-sizing:auto;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+h1,h2,h3{margin:0;font-weight:400;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
+.mono{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase}
+.muted{color:var(--grey)}
+.ul{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .35s cubic-bezier(.2,.7,.1,1)}
+.ul:hover{background-size:100% 1px}
+
+/* ---------- Header ---------- */
+.top{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;border-bottom:1px solid var(--ink)}
+.mark{display:flex;align-items:baseline;gap:10px}
+.mark b{font-family:var(--display);font-stretch:88%;font-weight:700;font-size:21px;letter-spacing:-.01em}
+.mark span{font-family:var(--serif);font-size:16px;color:var(--grey)}
+.top nav{display:flex;gap:clamp(14px,2.6vw,34px)}
+.top nav a{font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase}
+.top nav a:hover{color:var(--blue)}
+@media (max-width:640px){.top nav .opt{display:none}}
+
+/* ---------- Hero ---------- */
+.hero .wrap{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;padding-top:clamp(36px,5vw,64px);padding-bottom:clamp(28px,4vw,48px)}
+.hero-text{grid-column:1 / span 6;display:flex;flex-direction:column;justify-content:space-between;gap:36px;padding-top:8px}
+.hero-fig{grid-column:7 / span 6;margin:0}
+@media (max-width:960px){.hero-text,.hero-fig{grid-column:1 / -1}.hero-fig{margin-top:36px}}
+.kicker{display:flex;gap:18px;flex-wrap:wrap;color:var(--grey)}
+.kicker span:first-child{color:var(--ink)}
+.hero h1{font-family:var(--display);font-stretch:74%;font-weight:640;font-size:clamp(52px,7.4vw,112px);line-height:.9;letter-spacing:-.025em;margin-top:22px}
+.hero h1 .w{display:inline-block;animation:up .9s cubic-bezier(.16,.8,.2,1) both}
+.hero h1 .w:nth-child(2){animation-delay:.05s}.hero h1 .w:nth-child(3){animation-delay:.1s}
+.hero h1 .w:nth-child(4){animation-delay:.15s}.hero h1 .w:nth-child(5){animation-delay:.2s}.hero h1 .w:nth-child(6){animation-delay:.25s}
+.hero h1 .blue{color:var(--blue)}
+@keyframes up{from{opacity:0;transform:translateY(.35em)}to{opacity:1;transform:none}}
+.lede{font-size:clamp(19px,1.55vw,22px);line-height:1.5;max-width:30em;animation:up .9s .3s cubic-bezier(.16,.8,.2,1) both}
+.lede em{font-style:italic;color:var(--blue)}
+.hero-links{display:flex;flex-wrap:wrap;gap:10px;animation:up .9s .38s cubic-bezier(.16,.8,.2,1) both}
+.pill{display:inline-flex;align-items:center;gap:10px;height:42px;padding:0 18px;border:1px solid var(--ink);font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;transition:background .2s,color .2s,border-color .2s}
+.pill:hover{background:var(--ink);color:var(--paper)}
+.pill.solid{background:var(--blue);border-color:var(--blue);color:#fff}
+.pill.solid:hover{background:var(--ink);border-color:var(--ink)}
+.pill svg{width:12px;height:12px}
+
+.field{position:relative;aspect-ratio:1/1;max-height:640px;width:100%;touch-action:pan-y;cursor:crosshair;background:
+  linear-gradient(var(--rule),var(--rule)) 0 0/100% 1px no-repeat,
+  linear-gradient(var(--rule),var(--rule)) 0 100%/100% 1px no-repeat}
+.field canvas{position:absolute;inset:0;width:100%;height:100%}
+.field .a{position:absolute;font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--grey);pointer-events:none}
+.field .a1{top:12px;left:0}
+.field .a2{top:12px;right:0;text-align:right}
+.field .a3{bottom:12px;left:0}
+.field .a4{bottom:12px;right:0;text-align:right;color:var(--ink)}
+@media (max-width:600px){.field .a2,.field .a3{display:none}}
+.field .a4 b{color:var(--blue);font-weight:500;font-variant-numeric:tabular-nums;display:inline-block;min-width:3.4ch;text-align:right}
+.figcap{display:flex;justify-content:space-between;gap:16px;margin-top:12px;font-size:15px;color:var(--grey);line-height:1.4}
+.figcap i{font-style:italic;color:var(--ink)}
+
+/* Stat bar */
+.stats{grid-column:1 / -1;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.stats div{padding:20px 20px 22px 0;border-right:1px solid var(--rule);display:flex;flex-direction:column;gap:6px}
+.stats div+div{padding-left:20px}
+.stats div:last-child{border-right:0}
+.stats b{font-family:var(--display);font-stretch:80%;font-weight:600;font-size:clamp(26px,2.6vw,36px);line-height:1;letter-spacing:-.01em}
+.stats span{font-size:15px;color:var(--grey);line-height:1.35}
+@media (max-width:760px){.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(2){border-right:0}.stats div:nth-child(3){padding-left:0}.stats div:nth-child(-n+2){border-bottom:1px solid var(--rule)}}
+
+/* ---------- Section scaffolding ---------- */
+section{padding:clamp(72px,10vw,140px) 0}
+.sh{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;margin-bottom:clamp(36px,5vw,64px);align-items:end}
+.sh .mono{grid-column:1 / span 3;padding-bottom:10px}
+.sh h2{grid-column:4 / span 9;font-family:var(--display);font-stretch:76%;font-weight:620;font-size:clamp(40px,5.4vw,80px);line-height:.94;letter-spacing:-.022em}
+@media (max-width:760px){.sh .mono,.sh h2{grid-column:1 / -1}.sh h2{margin-top:10px}}
+
+/* ---------- Identity band ---------- */
+.band{background:var(--blue);color:#fff;position:relative;overflow:hidden}
+.band::before{content:"";position:absolute;inset:0;background:
+  repeating-radial-gradient(circle at 108% 50%,transparent 0 46px,rgba(255,255,255,.07) 46px 47px);pointer-events:none}
+.band .wrap{position:relative}
+.band .sh .mono{color:rgba(255,255,255,.75)}
+.band .intro{grid-column:4 / span 7;font-size:clamp(19px,1.5vw,22px);color:rgba(255,255,255,.85);margin-top:22px;max-width:34em}
+@media (max-width:760px){.band .intro{grid-column:1 / -1}}
+.tiers{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.9)}
+.tier{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;padding:34px 0 38px;border-bottom:1px solid rgba(255,255,255,.28);align-items:start;transition:background .3s}
+.tier:hover{background:rgba(255,255,255,.04)}
+.tier .lab{grid-column:1 / span 3;display:flex;gap:18px;align-items:flex-start}
+.tier .lab svg{width:56px;height:56px;flex:none;overflow:visible}
+.tier .lab .mono{color:rgba(255,255,255,.75);line-height:1.6}
+.tier .lab .mono b{display:block;color:#fff;font-size:13px}
+.tier h3{grid-column:4 / span 5;font-family:var(--display);font-stretch:76%;font-weight:600;font-size:clamp(32px,3.3vw,50px);line-height:.95;letter-spacing:-.02em}
+.tier:nth-child(2) h3{padding-left:clamp(0px,1.4vw,22px)}
+.tier:nth-child(3) h3{padding-left:clamp(0px,2.8vw,44px)}
+.tier .desc{grid-column:9 / span 4;font-size:17.5px;color:rgba(255,255,255,.88);display:flex;flex-direction:column;gap:14px}
+.tier .tag{align-self:flex-start;font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(255,255,255,.6);padding:5px 9px}
+@media (max-width:960px){.tier .lab{grid-column:1 / -1;margin-bottom:16px}.tier h3{grid-column:1 / -1;padding-left:0!important}.tier .desc{grid-column:1 / -1;margin-top:14px}}
+.g-ring{fill:none;stroke:#fff;stroke-width:1.3}
+.g-dot{fill:#fff}
+.g-pulse{fill:none;stroke:#fff;stroke-width:1;transform-box:fill-box;transform-origin:center;animation:ping 2.6s cubic-bezier(.2,.6,.3,1) infinite}
+.g-pulse.b{animation-delay:1.3s}
+@keyframes ping{0%{transform:scale(.4);opacity:.9}100%{transform:scale(2.6);opacity:0}}
+.g-spin{transform-box:fill-box;transform-origin:center;animation:spin 24s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* ---------- Selected work ---------- */
+.feature{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;padding:28px 0 44px;border-top:5px solid var(--ink)}
+.feature .mono{grid-column:1 / span 3;color:var(--blue)}
+.feature h3{grid-column:4 / span 6;font-family:var(--serif);font-weight:400;font-size:clamp(32px,3.6vw,52px);line-height:1.05;letter-spacing:-.012em}
+.feature h3 a:hover{color:var(--blue)}
+.feature .side{grid-column:10 / span 3;display:flex;flex-direction:column;gap:16px;font-size:16.5px;color:var(--grey)}
+.feature .side a{color:var(--ink);font-family:var(--mono);font-size:11.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;align-self:flex-start}
+@media (max-width:960px){.feature .mono,.feature h3,.feature .side{grid-column:1 / -1}.feature h3{margin:14px 0 18px}}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);column-gap:24px;row-gap:48px}
+@media (max-width:900px){.grid3{grid-template-columns:1fr}}
+.item{border-top:1px solid var(--ink);padding-top:18px;display:flex;flex-direction:column;gap:12px}
+.item .mono{color:var(--grey)}
+.item h4{margin:0;font-family:var(--serif);font-weight:400;font-size:28px;line-height:1.12;letter-spacing:-.01em}
+.item p{font-size:16.5px;color:var(--grey)}
+.refs{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:auto;padding-top:8px}
+.refs a,.refs span{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--ink)}
+.refs a:hover{color:var(--blue)}
+.next{grid-column:1 / -1;display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;border-top:1px dashed var(--blue);padding-top:22px;margin-top:8px}
+.next .mono{grid-column:1 / span 3;color:var(--blue)}
+.next h4{grid-column:4 / span 5;margin:0;font-family:var(--serif);font-style:italic;font-weight:400;font-size:32px;line-height:1.1;color:var(--blue)}
+.next p{grid-column:9 / span 4;font-size:16.5px;color:var(--grey)}
+@media (max-width:900px){.next .mono,.next h4,.next p{grid-column:1 / -1}.next h4{margin:10px 0}}
+
+/* ---------- About ---------- */
+.about{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;row-gap:36px}
+.duo{grid-column:1 / span 4;margin:0;position:relative;background:var(--blue);overflow:hidden;aspect-ratio:4/5}
+.duo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.08) brightness(1.06);mix-blend-mode:screen;transition:filter .6s,mix-blend-mode .6s,opacity .6s}
+.duo:hover img{filter:none;mix-blend-mode:normal}
+.duo figcaption{position:absolute;left:12px;bottom:10px;color:#fff;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;mix-blend-mode:normal}
+.bio{grid-column:6 / span 7}
+.bio p{font-size:clamp(20px,1.7vw,24px);line-height:1.45;margin-bottom:22px;max-width:30em}
+.bio p:first-child::first-line{font-weight:500}
+.bio a{color:var(--blue)}
+.facts{display:grid;grid-template-columns:1fr 1fr;column-gap:24px;margin-top:34px;border-top:1px solid var(--ink)}
+.facts div{padding:14px 0 16px;border-bottom:1px solid var(--rule)}
+.facts dt{color:var(--grey);margin-bottom:4px}
+.facts dd{margin:0;font-size:17px;line-height:1.4}
+@media (max-width:860px){.duo{grid-column:1 / span 8;max-width:340px}.bio{grid-column:1 / -1}.facts{grid-template-columns:1fr}}
+
+/* ---------- Publications ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:0;margin-bottom:28px;border:1px solid var(--ink);width:fit-content;max-width:100%}
+.filters button{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;height:38px;padding:0 16px;border:0;border-right:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;transition:background .2s,color .2s}
+.filters button:last-child{border-right:0}
+.filters button:hover{background:rgba(16,52,224,.08)}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.pubs{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.pub{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;padding:24px 0 26px;border-bottom:1px solid var(--rule);position:relative}
+.pub[hidden]{display:none}
+.pub .yr{grid-column:1 / span 1;font-family:var(--display);font-stretch:80%;font-weight:600;font-size:22px;line-height:1.2;font-variant-numeric:tabular-nums}
+.pub .ven{grid-column:2 / span 2;font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--grey);padding-top:6px;line-height:1.5}
+.pub .body{grid-column:4 / span 8}
+.pub .t{font-size:24px;line-height:1.2;letter-spacing:-.005em;transition:color .2s}
+.pub a.t:hover{color:var(--blue)}
+.pub .au{font-size:15.5px;color:var(--grey);margin-top:8px;line-height:1.45}
+.pub .au b{color:var(--ink);font-weight:600}
+.pub .flags{grid-column:12 / span 1;display:flex;flex-direction:column;align-items:flex-end;gap:6px;padding-top:6px}
+.flag{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);white-space:nowrap}
+.flag.f{background:var(--blue);color:#fff;padding:2px 6px}
+.pub::before{content:"";position:absolute;left:0;top:-1px;height:1px;width:0;background:var(--blue);transition:width .5s cubic-bezier(.2,.7,.1,1)}
+.pub:hover::before{width:100%}
+@media (max-width:860px){.pub .yr{grid-column:1 / span 3}.pub .ven{grid-column:4 / span 9;padding-top:4px}.pub .body{grid-column:1 / -1;margin-top:10px}.pub .flags{grid-column:1 / -1;flex-direction:row;align-items:center;margin-top:10px}}
+.count{margin-top:16px;color:var(--grey)}
+
+/* ---------- News / honors / lists ---------- */
+.two{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;row-gap:64px}
+.two > div:first-child{grid-column:1 / span 6}
+.two > div:last-child{grid-column:8 / span 5}
+@media (max-width:900px){.two > div{grid-column:1 / -1!important}}
+h3.k{font-family:var(--display);font-stretch:78%;font-weight:620;font-size:clamp(30px,3vw,42px);line-height:1;letter-spacing:-.018em;padding-bottom:16px;border-bottom:1px solid var(--ink)}
+.news{list-style:none;margin:0;padding:0}
+.news li{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--rule);font-size:17.5px;line-height:1.45}
+.news li .mono{color:var(--grey);padding-top:4px}
+.news li:first-child .mono{color:var(--blue)}
+.news li:first-child .mono::before{content:"";display:inline-block;width:7px;height:7px;background:var(--blue);border-radius:50%;margin-right:8px;vertical-align:1px;animation:blink 2s ease-in-out infinite}
+@keyframes blink{50%{opacity:.25}}
+.rows{list-style:none;margin:0;padding:0}
+.rows li{display:grid;grid-template-columns:1fr auto;gap:16px;padding:14px 0;border-bottom:1px solid var(--rule);font-size:17px;line-height:1.35}
+.rows li small{display:block;font-size:14.5px;color:var(--grey);margin-top:3px}
+.rows li > span:last-child{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.06em;color:var(--grey);padding-top:4px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.spacer{height:clamp(56px,7vw,96px)}
+
+/* ---------- Contact ---------- */
+.contact{border-top:1px solid var(--ink);padding-bottom:clamp(48px,6vw,80px)}
+.contact h2{font-family:var(--display);font-stretch:72%;font-weight:640;font-size:clamp(64px,13vw,200px);line-height:.85;letter-spacing:-.035em}
+.contact h2 span{color:var(--blue)}
+.contact .row{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;margin-top:40px;align-items:end;row-gap:24px}
+.contact .email{grid-column:1 / span 7;font-family:var(--serif);font-style:italic;font-size:clamp(26px,3.4vw,46px);line-height:1.1;color:var(--ink)}
+.contact .email:hover{color:var(--blue)}
+.contact .links{grid-column:8 / span 5;display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
+@media (max-width:860px){.contact .email,.contact .links{grid-column:1 / -1;justify-content:flex-start}}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:18px;padding-bottom:32px;border-top:1px solid var(--rule);color:var(--grey);font-size:14.5px}
+footer a{color:var(--ink)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Junxi Yi, back to top"><b>Junxi Yi</b><span>易俊希</span></a>
+    <nav aria-label="Main">
+      <a class="ul" href="#identity">Research</a>
+      <a class="ul opt" href="#work">Work</a>
+      <a class="ul opt" href="#about">About</a>
+      <a class="ul" href="#publications">Publications</a>
+      <a class="ul" href="/files/Junxi_Yi_CV.pdf">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <div>
+        <div class="kicker mono"><span>Ph.D. Candidate, Bioengineering</span><span>University of Illinois Urbana-Champaign</span></div>
+        <h1><span class="w">Engineering</span> <span class="w">molecular</span> <span class="w">systems</span> <span class="w">with</span> <span class="w blue">physical</span> <span class="w blue">forces.</span></h1>
+      </div>
+      <p class="lede">I design molecules that read sound, light and mechanical stress as instructions, so biology can be switched on <em>exactly where</em> a force is focused, deep inside living tissue.</p>
+      <div class="hero-links">
+        <a class="pill solid" href="#identity">Research identity
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M6 1v10M2 7l4 4 4-4"/></svg></a>
+        <a class="pill" href="#publications">Publications</a>
+        <a class="pill" href="/files/Junxi_Yi_CV.pdf">CV
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+      </div>
+    </div>
+
+    <figure class="hero-fig">
+      <div class="field" id="field" role="img" aria-label="Animated diagram: a curved ultrasound transducer sends converging wavefronts to a focal spot. Molecules inside the focal zone switch on; molecules elsewhere stay off. Move the pointer to steer the focus.">
+        <canvas id="cv"></canvas>
+        <span class="a a1">Fig. 1 · Focused ultrasound</span>
+        <span class="a a2">Isobars, pressure re: peak</span>
+        <span class="a a3" id="hint">Move to steer the focus</span>
+        <span class="a a4">Switched on · in focus <b id="rin">0%</b> · elsewhere <b id="rout">0%</b></span>
+      </div>
+      <figcaption class="figcap"><span><i>Spatial precision as a design input.</i> Molecules respond only where the acoustic energy converges.</span></figcaption>
+    </figure>
+  </div>
+
+  <div class="wrap" style="display:block;padding-top:0">
+    <div class="stats">
+      <div><b>PNAS 2026</b><span>First-author paper on ultrasound activation in living plants</span></div>
+      <div><b>8 papers</b><span>Peer-reviewed journal articles, five as first or co-first author</span></div>
+      <div><b>Beckman Fellow</b><span>Beckman Institute Graduate Fellowship, 2026–27</span></div>
+      <div><b>Mavis Fellow</b><span>Future Faculty Fellowship, 2026–27</span></div>
+    </div>
+  </div>
+</div>
+
+<section class="band" id="identity">
+  <div class="wrap">
+    <div class="sh">
+      <div class="mono">Research identity</div>
+      <h2>From a long-term vision to the experiment on the bench.</h2>
+      <p class="intro">Three layers, each narrower than the last. The vision is not tied to any technology; the approach is what makes the work recognizable; the expertise is where the results are today.</p>
+    </div>
+
+    <ol class="tiers">
+      <li class="tier">
+        <div class="lab">
+          <svg viewBox="0 0 56 56" aria-hidden="true"><g class="g-spin"><circle class="g-ring" cx="28" cy="28" r="26" stroke-dasharray="3 5"/></g><circle class="g-ring" cx="28" cy="28" r="18"/></svg>
+          <div class="mono"><b>01 · Vision</b>Long-term</div>
+        </div>
+        <h3>Programmable Molecular Systems</h3>
+        <div class="desc">
+          <p>Molecular systems whose states can be written, gated and read out on demand, in cells, tissues and whole organisms.</p>
+          <span class="tag">Sets the horizon</span>
+        </div>
+      </li>
+      <li class="tier">
+        <div class="lab">
+          <svg viewBox="0 0 56 56" aria-hidden="true"><path class="g-ring" d="M6 14 A 26 26 0 0 1 6 42"/><path class="g-ring" d="M14 18 A 16 16 0 0 1 14 38"/><circle class="g-dot" cx="40" cy="28" r="3"/><path class="g-ring" d="M20 28h14" stroke-dasharray="2 3"/></svg>
+          <div class="mono"><b>02 · Approach</b>Core method</div>
+        </div>
+        <h3>Physical Forces as Molecular Inputs</h3>
+        <div class="desc">
+          <p>Sound, light and mechanical stress reach deep tissue and can be aimed with millimeter precision. I build molecules that treat these forces as instructions.</p>
+          <span class="tag">Defines the identity</span>
+        </div>
+      </li>
+      <li class="tier">
+        <div class="lab">
+          <svg viewBox="0 0 56 56" aria-hidden="true"><circle class="g-pulse" cx="28" cy="28" r="8"/><circle class="g-pulse b" cx="28" cy="28" r="8"/><circle class="g-dot" cx="28" cy="28" r="6"/></svg>
+          <div class="mono"><b>03 · Expertise</b>Current</div>
+        </div>
+        <h3>Ultrasound Mechanochemistry</h3>
+        <div class="desc">
+          <p>Focused ultrasound that activates force-responsive molecules in tumors and in living plants, with imaging to confirm where activation happens.</p>
+          <span class="tag">PNAS 2026 · ACS Nano 2024 · Small Methods 2025</span>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sh">
+      <div class="mono">Selected work</div>
+      <h2>Where force meets function.</h2>
+    </div>
+
+    <article class="feature">
+      <div class="mono">Featured · PNAS 2026<br>First author</div>
+      <h3><a href="https://doi.org/10.1073/pnas.2533066123">Ultrasound-driven mechanophore activation in living plants</a></h3>
+      <div class="side">
+        <p>Focused ultrasound switches on force-responsive molecules inside living plants, carrying mechanochemistry beyond animal models.</p>
+        <a class="ul" href="https://doi.org/10.1073/pnas.2533066123">Read the paper ↗</a>
+      </div>
+    </article>
+
+    <div class="grid3">
+      <article class="item">
+        <div class="mono">Deep-tissue mechanochemistry</div>
+        <h4>Injectable mechanophore nanoparticles</h4>
+        <p>Nanoparticles that ultrasound activates deep in tissue for mechanochemical dynamic therapy.</p>
+        <div class="refs"><a class="ul" href="https://doi.org/10.1021/acsnano.4c04090">ACS Nano 2024 ↗</a></div>
+      </article>
+      <article class="item">
+        <div class="mono">Triggered nanomedicine</div>
+        <h4>Nanodroplets for macrophage immunotherapy</h4>
+        <p>Near-infrared-triggered nanodroplets that guide macrophage-mediated cancer immunotherapy under imaging.</p>
+        <div class="refs"><a class="ul" href="https://doi.org/10.1002/smtd.202401679">Small Methods 2025 · Frontispiece ↗</a><a class="ul" href="https://doi.org/10.1080/17435889.2025.2501515">Nanomedicine 2025 ↗</a></div>
+      </article>
+      <article class="item">
+        <div class="mono">Seeing where energy lands</div>
+        <h4>Localization imaging for activation</h4>
+        <p>Photoacoustic and ultrasound localization imaging that maps activatable agents and verifies where energy is delivered.</p>
+        <div class="refs"><a class="ul" href="https://doi.org/10.1038/s44172-026-00592-w">Commun. Eng. 2026 ↗</a><a class="ul" href="https://doi.org/10.21769/BioProtoc.5247">Bio-protocol 2025 ↗</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh">
+      <div class="mono">About</div>
+      <h2>Chemist by training, engineer by practice.</h2>
+    </div>
+    <div class="about">
+      <figure class="duo">
+        <img src="images/portrait.jpg" alt="Portrait of Junxi Yi" width="900" height="1125">
+        <figcaption>Junxi Yi · Urbana, IL</figcaption>
+      </figure>
+      <div class="bio">
+        <p>I am a Ph.D. candidate in <a class="ul" href="https://bioengineering.illinois.edu/">Bioengineering</a> at the University of Illinois Urbana-Champaign, advised by <a class="ul" href="https://yschenlab.web.illinois.edu/?page_id=17">Prof. Yun-Sheng Chen</a> at the Beckman Institute.</p>
+        <p>My work joins acoustic physics, polymer mechanochemistry and molecular engineering. I use focused ultrasound to activate force-responsive molecules deep in tissue, and I am building toward molecular systems that can be programmed entirely by physical inputs.</p>
+        <p>I trained in chemical biology at the University of Science and Technology of China.</p>
+        <dl class="facts">
+          <div><dt class="mono">Ph.D. Bioengineering</dt><dd>UIUC, 2022 – present</dd></div>
+          <div><dt class="mono">B.Sc. Chemical Biology</dt><dd>USTC, Lu Jiaxi Honors Program, 2018 – 2022</dd></div>
+          <div><dt class="mono">Fellowships</dt><dd>Beckman Institute Graduate Fellow<br>Mavis Future Faculty Fellow, 2026–27</dd></div>
+          <div><dt class="mono">Teaching</dt><dd>Five Bioengineering courses, from biofabrication to deep learning for imaging</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="publications" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh">
+      <div class="mono">Publications<br><span class="muted">* co-first author</span></div>
+      <h2>Papers</h2>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filter publications">
+      <button type="button" id="f-all" data-f="all" aria-pressed="true">All</button>
+      <button type="button" id="f-first" data-f="first" aria-pressed="false">First / co-first</button>
+      <button type="button" id="f-2026" data-f="2026" aria-pressed="false">2026</button>
+      <button type="button" id="f-2025" data-f="2025" aria-pressed="false">2025</button>
+      <button type="button" id="f-2024" data-f="2024" aria-pressed="false">2024</button>
+    </div>
+
+    <ol class="pubs" id="pubs">
+      <li class="pub" data-year="prep" data-first="0">
+        <span class="yr">In prep.</span><span class="ven">Manuscript</span>
+        <div class="body"><span class="t">An open-source automated focused ultrasound system for programmable mechanophore screening</span>
+          <div class="au">H. Li, S. Zhao, F. Xie, <b>J. Yi</b>, B. Chen, M. Chauhan, M. Oelze, K. Li, J. S. Moore, Y.-S. Chen</div></div>
+        <div class="flags"><span class="flag">In preparation</span></div>
+      </li>
+      <li class="pub" data-year="2026" data-first="0">
+        <span class="yr">2026</span><span class="ven">ACS Nano Medicine</span>
+        <div class="body"><a class="t" href="https://doi.org/10.1021/acsnanomed.6c00203">Engineering nano-immune interfaces for precision STING activation: from molecular engineering to cancer immunotherapy</a>
+          <div class="au">M. Chauhan, S. Kumar, <b>J. Yi</b>, Y.-S. Chen</div></div>
+        <div class="flags"></div>
+      </li>
+      <li class="pub" data-year="2026" data-first="1">
+        <span class="yr">2026</span><span class="ven">PNAS</span>
+        <div class="body"><a class="t" href="https://doi.org/10.1073/pnas.2533066123">Ultrasound-driven mechanophore activation in living plants</a>
+          <div class="au"><b>J. Yi*</b>, F. Xie*, J. Q. Moller*, Z. Xu, S. Zhao, Y. Diao, A. D. B. Leakey, J. S. Moore, Y.-S. Chen</div></div>
+        <div class="flags"><span class="flag f">Co-first</span></div>
+      </li>
+      <li class="pub" data-year="2026" data-first="0">
+        <span class="yr">2026</span><span class="ven">Communications Engineering</span>
+        <div class="body"><a class="t" href="https://doi.org/10.1038/s44172-026-00592-w">Photo-activated ultrasound localization imaging with laser-activated nanodroplets</a>
+          <div class="au">S. Zhao, <b>J. Yi</b>, Y. Qiu, Z. Huang, Y.-S. Chen</div></div>
+        <div class="flags"></div>
+      </li>
+      <li class="pub" data-year="2026" data-first="1">
+        <span class="yr">2026</span><span class="ven">ASEE Annual Conference · Charlotte, NC</span>
+        <div class="body"><a class="t" href="https://peer.asee.org/60818">WIP: An undergraduate neural tissue engineering lab course</a>
+          <div class="au"><b>J. Yi</b>, M. C. Fanning, M. R. Surburg, F. Buranits, P. W. Hsu, Y. Li, A. J. Loarte, A. Michailidis, Z. S. Rehman, M. Griebel, C. Cvetkovic</div></div>
+        <div class="flags"><span class="flag">Conference</span></div>
+      </li>
+      <li class="pub" data-year="2025" data-first="1">
+        <span class="yr">2025</span><span class="ven">Small Methods</span>
+        <div class="body"><a class="t" href="https://doi.org/10.1002/smtd.202401679">Near-infrared-triggered nanodroplets for imaging-guided macrophage-mediated cancer immunotherapy</a>
+          <div class="au"><b>J. Yi*</b>, M. Chauhan*, Y. Zhao, Y.-S. Chen</div></div>
+        <div class="flags"><span class="flag f">Co-first</span><span class="flag">Frontispiece</span></div>
+      </li>
+      <li class="pub" data-year="2025" data-first="1">
+        <span class="yr">2025</span><span class="ven">Nanomedicine</span>
+        <div class="body"><a class="t" href="https://doi.org/10.1080/17435889.2025.2501515">How can nanotechnology be leveraged to produce multifunctional contrast agents to improve imaging and diagnostics?</a>
+          <div class="au"><b>J. Yi</b>, Y.-S. Chen</div></div>
+        <div class="flags"><span class="flag f">First</span></div>
+      </li>
+      <li class="pub" data-year="2025" data-first="0">
+        <span class="yr">2025</span><span class="ven">Bio-protocol</span>
+        <div class="body"><a class="t" href="https://doi.org/10.21769/BioProtoc.5247">Dual-modal fast photoacoustic/ultrasound localization imaging with sparsity-constrained optimization</a>
+          <div class="au">S. Zhao, S. Paul, <b>J. Yi</b>, Y.-S. Chen</div></div>
+        <div class="flags"></div>
+      </li>
+      <li class="pub" data-year="2024" data-first="1">
+        <span class="yr">2024</span><span class="ven">ACS Nano</span>
+        <div class="body"><a class="t" href="https://doi.org/10.1021/acsnano.4c04090">Injectable mechanophore nanoparticles for deep-tissue mechanochemical dynamic therapy</a>
+          <div class="au">J. Wang*, S. Zhao*, <b>J. Yi*</b>, Y. Sun, M. Agrawal, M. L. Oelze, K. Li, J. S. Moore, Y.-S. Chen</div></div>
+        <div class="flags"><span class="flag f">Co-first</span></div>
+      </li>
+      <li class="pub" data-year="2024" data-first="1">
+        <span class="yr">2024</span><span class="ven">ACS Synthetic Biology</span>
+        <div class="body"><a class="t" href="https://doi.org/10.1021/acssynbio.3c00643">Using protein design and directed evolution to monomerize a bright near-infrared fluorescent protein</a>
+          <div class="au">X. Hu*, Y. Xu*, <b>J. Yi*</b>, C. Wang, Z. Zhu, T. Yue, H. Zhang, X. Wang, F. Wu, L. Bai, H. Liu, Q. Chen</div></div>
+        <div class="flags"><span class="flag f">Co-first</span></div>
+      </li>
+    </ol>
+    <p class="count mono" id="count">Showing 10 of 10 · Full list on <a class="ul" href="https://scholar.google.com/citations?user=T859gf4AAAAJ" style="color:var(--blue)">Google Scholar ↗</a></p>
+  </div>
+</section>
+
+<section id="news" style="padding-top:0">
+  <div class="wrap">
+    <div class="two">
+      <div>
+        <h3 class="k">News</h3>
+        <ol class="news">
+          <li><span class="mono">2026</span><span>Paper on nano-immune interfaces for precision STING activation published in <i>ACS Nano Medicine</i>.</span></li>
+          <li><span class="mono">2026</span><span>Received the China Scholarship Council <b>Award for Outstanding Overseas Study Elite</b>.</span></li>
+          <li><span class="mono">05 · 2026</span><span>Selected as a <b>Mavis Future Faculty Fellow</b> for 2026–2027.</span></li>
+          <li><span class="mono">04 · 2026</span><span>Selected as a <b>Beckman Institute Graduate Fellow</b> for 2026–2027.</span></li>
+          <li><span class="mono">2026</span><span>Work-in-progress paper on an undergraduate neural tissue engineering lab course published at <i>ASEE 2026</i>, Charlotte, NC.</span></li>
+          <li><span class="mono">2026</span><span>First-author paper in <i>PNAS</i> on ultrasound-driven mechanophore activation in living plants.</span></li>
+          <li><span class="mono">01 · 2026</span><span>Photo-activated ultrasound localization imaging published in <i>Communications Engineering</i>.</span></li>
+          <li><span class="mono">11 · 2025</span><span>Nanodroplet immunotherapy work featured as the <i>Small Methods</i> frontispiece.</span></li>
+        </ol>
+      </div>
+      <div>
+        <h3 class="k">Honors</h3>
+        <ul class="rows">
+          <li><span>Beckman Institute Graduate Fellow<small>UIUC</small></span><span>2026</span></li>
+          <li><span>Mavis Future Faculty Fellow<small>UIUC</small></span><span>2026</span></li>
+          <li><span>Award for Outstanding Overseas Study Elite<small>China Scholarship Council</small></span><span>2026</span></li>
+          <li><span>Outstanding Student Scholarship, Bronze<small>USTC</small></span><span>2021</span></li>
+          <li><span>Wu Xuezhou Scholarship<small>USTC &amp; Changchun Institute of Applied Chemistry, CAS</small></span><span>2020</span></li>
+          <li><span>Lu Jiaxi Talent Program Scholarship<small>USTC</small></span><span>2018–21</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="two">
+      <div>
+        <h3 class="k">Talks &amp; presentations</h3>
+        <ul class="rows">
+          <li><span>Ultrasound-driven molecular activation in vivo<small>Poster, NSF cMUSIC Meeting, Raleigh, NC</small></span><span>2026</span></li>
+          <li><span>Near-infrared-triggered nanodroplets for macrophage-targeted cancer immunotherapy<small>Invited talk, Mechanochemical Dynamic Therapy Workshop, Cancer Center at Illinois</small></span><span>2025</span></li>
+          <li><span>Injectable mechanophore nanoparticles for deep-tissue mechanochemical dynamic therapy<small>Talk, Bioengineering Graduate Research Symposium, UIUC</small></span><span>2024</span></li>
+          <li><span>Cancer killing effect of ultrasound-responsive mechanophore nanoparticles<small>Poster, Cancer Research Annual Meeting, San Diego, CA</small></span><span>2024</span></li>
+          <li><span>In vivo mechanochemical dynamic cancer therapy using focused ultrasound-triggered mechanophores<small>Poster, BMES Annual Meeting, Seattle, WA</small></span><span>2023</span></li>
+          <li><span>Non-invasive imaging of gut microbes with reversibly switchable photoacoustic protein<small>Poster, BMES Annual Meeting, Seattle, WA</small></span><span>2023</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="k">Teaching &amp; outreach</h3>
+        <ul class="rows">
+          <li><span>BIOE 486, Applied Deep Learning in Biomedical Imaging<small>Teaching assistant</small></span><span>2026</span></li>
+          <li><span>BIOE 303, Quantitative Physiology Lab<small>Teaching assistant</small></span><span>2025–26</span></li>
+          <li><span>NE 431, Neural Engineering Lab<small>Teaching assistant</small></span><span>2025</span></li>
+          <li><span>BIOE 210, Linear Algebra for Biomedical Data Science<small>Teaching assistant</small></span><span>2024–25</span></li>
+          <li><span>BIOE 306, Biofabrication<small>Teaching assistant</small></span><span>2023</span></li>
+          <li><span>Beckman Open House and ECE summer programs<small>Ultrasound and 3D-printing demos for the public</small></span><span>2023–24</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="mono muted" style="margin-bottom:22px">Contact</div>
+    <h2>Let’s <span>talk.</span></h2>
+    <div class="row">
+      <a class="email ul" href="mailto:junxiyi2@illinois.edu">junxiyi2@illinois.edu</a>
+      <div class="links">
+        <a class="pill" href="https://scholar.google.com/citations?user=T859gf4AAAAJ">Scholar</a>
+        <a class="pill" href="https://orcid.org/0000-0001-5274-9513">ORCID</a>
+        <a class="pill" href="https://www.linkedin.com/in/junxi-yi-074501253/">LinkedIn</a>
+        <a class="pill solid" href="/files/Junxi_Yi_CV.pdf">CV ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Junxi Yi · 2313 Beckman Institute, 405 N. Mathews Ave., Urbana, IL 61801</span>
+    <span>A warm welcome from <a class="ul" href="https://blogs.illinois.edu/view/9359/387617733">the tiniest crabs in the world</a>.</span>
+  </div>
+</footer>
+
+<script>
+/* ---------- Focused ultrasound field ---------- */
+(function(){
+  const box=document.getElementById('field'), cv=document.getElementById('cv'), ctx=cv.getContext('2d');
+  const rin=document.getElementById('rin'), rout=document.getElementById('rout');
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const C={ink:'#0B0C0E',grey:'#6A6E75',rule:'#E2E3E5',blue:'#1034E0'};
+  let W=0,H=0,dpr=1,dots=[],t=0,last=0,running=false;
+  let F={x:0,y:0}, Ft={x:0,y:0}, T={x:0,y:0}, auto=true, autoT=0;
+  const LAM=24, V=62, AP=0.46; // wavelength (px), speed (px/s), aperture half-angle (rad)
+
+  function layout(){
+    const r=box.getBoundingClientRect(); dpr=Math.min(devicePixelRatio||1,2);
+    W=r.width; H=r.height; cv.width=Math.round(W*dpr); cv.height=Math.round(H*dpr); ctx.setTransform(dpr,0,0,dpr,0,0);
+    T={x:W*0.02,y:H*0.5}; F={x:W*0.6,y:H*0.5}; Ft={...F};
+    dots=[]; const sp=Math.max(12,Math.min(16,W/40));
+    for(let y=sp*2.2;y<H-sp*2;y+=sp) for(let x=sp*3.2;x<W-sp*0.6;x+=sp){
+      dots.push({x:x+(Math.random()-.5)*sp*.5,y:y+(Math.random()-.5)*sp*.5,s:0});
+    }
+  }
+  function geom(){
+    const ax=F.x-T.x, ay=F.y-T.y, R=Math.hypot(ax,ay);
+    return {R, ux:ax/R, uy:ay/R, phi:Math.atan2(T.y-F.y,T.x-F.x)};
+  }
+  const A6=()=>LAM*3.4, B6=()=>LAM*0.95; // -6 dB semi-axes (along beam, lateral)
+
+  function step(dt){
+    t+=dt;
+    if(auto){ autoT+=dt; Ft.x=W*(0.62+0.08*Math.sin(autoT*0.35)); Ft.y=H*(0.5+0.16*Math.sin(autoT*0.52)); }
+    F.x+=(Ft.x-F.x)*Math.min(1,dt*3); F.y+=(Ft.y-F.y)*Math.min(1,dt*3);
+    const g=geom(), a6=A6(), b6=B6(); let inN=0,inOn=0,outN=0,outOn=0;
+    for(const d of dots){
+      const px=d.x-F.x, py=d.y-F.y, u=px*g.ux+py*g.uy, w=-px*g.uy+py*g.ux;
+      const amp=Math.exp(-Math.LN2*((u/a6)**2+(w/b6)**2));
+      const dist=Math.hypot(px,py), sp=u<0?-dist:dist;
+      const crest=Math.cos(2*Math.PI*(sp+g.R-t*V)/LAM);
+      const p=amp*Math.max(0,crest);
+      if(p>0.55) d.s=Math.min(1,d.s+dt*8); else d.s=Math.max(0,d.s-dt*0.5);
+      if(amp>=0.5){inN++; if(d.s>0.4) inOn++;} else {outN++; if(d.s>0.4) outOn++;}
+    }
+    rin.textContent=(inN?Math.round(inOn/inN*100):0)+'%';
+    rout.textContent=(outN?Math.round(outOn/outN*100):0)+'%';
+  }
+
+  function ellipse(g,k,dash,label){
+    ctx.save(); ctx.translate(F.x,F.y); ctx.rotate(Math.atan2(g.uy,g.ux));
+    ctx.setLineDash(dash); ctx.strokeStyle=C.ink; ctx.globalAlpha=0.55; ctx.lineWidth=0.8;
+    ctx.beginPath(); ctx.ellipse(0,0,A6()*k,B6()*k,0,0,Math.PI*2); ctx.stroke(); ctx.restore();
+    // label just past the far end of the major axis, so the three never collide
+    const lx=F.x + g.ux*(A6()*k+4), ly=F.y + g.uy*(A6()*k+4);
+    ctx.setLineDash([]); ctx.globalAlpha=0.75; ctx.fillStyle=C.ink;
+    ctx.font='500 9.5px "IBM Plex Mono", monospace'; ctx.textAlign='left';
+    ctx.fillText(label, lx+2, ly-6);
+    ctx.globalAlpha=1;
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    const g=geom();
+    // depth scale along the beam axis (every LAM*2 px)
+    ctx.strokeStyle=C.rule; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(T.x,T.y); ctx.lineTo(T.x+g.ux*W*1.2,T.y+g.uy*W*1.2); ctx.stroke();
+
+    // molecules
+    for(const d of dots){
+      if(d.s<0.02){ ctx.fillStyle=C.grey; ctx.globalAlpha=0.32; ctx.fillRect(d.x-0.75,d.y-0.75,1.5,1.5); }
+    }
+    ctx.globalAlpha=1;
+    // wavefronts: converge toward F, then diverge past it
+    const R=g.R, off=(t*V)%LAM;
+    for(let s=-R+off; s<R*0.85; s+=LAM){
+      const r=Math.abs(s); if(r<2.5) continue;
+      const focusGain=Math.min(1,Math.pow(LAM*1.2/Math.max(r,LAM*1.2),0.55));
+      const tail=s>0?Math.max(0,1-s/(R*0.85)):1;
+      const a=(0.18+0.82*focusGain)*tail;
+      ctx.strokeStyle=C.blue; ctx.globalAlpha=a; ctx.lineWidth=0.7+1.5*focusGain;
+      const c=s<0?g.phi:g.phi+Math.PI;
+      ctx.beginPath(); ctx.arc(F.x,F.y,r,c-AP,c+AP); ctx.stroke();
+    }
+    ctx.globalAlpha=1;
+    // transducer: thick arc on the source side
+    ctx.strokeStyle=C.ink; ctx.lineWidth=7; ctx.lineCap='butt';
+    ctx.beginPath(); ctx.arc(F.x,F.y,R,g.phi-AP*1.04,g.phi+AP*1.04); ctx.stroke();
+    // isobars
+    ellipse(g,1.55,[2,3],'−12 dB'); ellipse(g,1,[4,3],'−6 dB'); ellipse(g,0.72,[],'−3 dB');
+    // activated molecules on top
+    for(const d of dots){
+      if(d.s>=0.02){
+        ctx.globalAlpha=0.35+0.65*d.s; ctx.fillStyle=C.blue;
+        ctx.beginPath(); ctx.arc(d.x,d.y,1.3+1.3*d.s,0,Math.PI*2); ctx.fill();
+        ctx.globalAlpha=0.35*d.s; ctx.strokeStyle=C.blue; ctx.lineWidth=0.8;
+        ctx.beginPath(); ctx.arc(d.x,d.y,3+5*(1-d.s),0,Math.PI*2); ctx.stroke();
+      }
+    }
+    ctx.globalAlpha=1;
+    // focal crosshair
+    ctx.strokeStyle=C.ink; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.moveTo(F.x-9,F.y); ctx.lineTo(F.x-3,F.y); ctx.moveTo(F.x+3,F.y); ctx.lineTo(F.x+9,F.y);
+    ctx.moveTo(F.x,F.y-9); ctx.lineTo(F.x,F.y-3); ctx.moveTo(F.x,F.y+3); ctx.lineTo(F.x,F.y+9); ctx.stroke();
+  }
+
+  function loop(ts){ if(!running) return; const dt=Math.min(.05,(ts-(last||ts))/1000); last=ts; step(dt); draw(); requestAnimationFrame(loop); }
+  function start(){ if(running||reduce) return; running=true; last=0; requestAnimationFrame(loop); }
+  function stop(){ running=false; }
+
+  layout(); for(let i=0;i<60;i++) step(1/60); draw();
+
+  function steer(e){
+    const r=box.getBoundingClientRect(); auto=false;
+    Ft.x=Math.max(W*0.38,Math.min(W*0.88,e.clientX-r.left));
+    Ft.y=Math.max(H*0.18,Math.min(H*0.82,e.clientY-r.top));
+    if(reduce){F={...Ft}; for(let i=0;i<40;i++) step(1/60); draw();}
+  }
+  box.addEventListener('pointermove',steer);
+  box.addEventListener('pointerdown',steer);
+  box.addEventListener('pointerleave',()=>{auto=true;});
+  new ResizeObserver(()=>{layout(); for(let i=0;i<30;i++) step(1/60); draw();}).observe(box);
+  new IntersectionObserver(es=>es[0].isIntersecting?start():stop(),{threshold:.05}).observe(box);
+  document.addEventListener('visibilitychange',()=>document.hidden?stop():start());
+})();
+
+/* ---------- Publication filters ---------- */
+(function(){
+  const btns=[...document.querySelectorAll('.filters button')], items=[...document.querySelectorAll('#pubs .pub')];
+  const count=document.getElementById('count'), tail=count.innerHTML.slice(count.innerHTML.indexOf('·'));
+  function apply(f){
+    let n=0;
+    items.forEach(li=>{const show=f==='all'||(f==='first'?li.dataset.first==='1':li.dataset.year===f); li.hidden=!show; if(show)n++;});
+    count.innerHTML='Showing '+n+' of '+items.length+' '+tail;
+    btns.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.f===f)));
+  }
+  btns.forEach(b=>b.addEventListener('click',()=>apply(b.dataset.f)));
+})();
+</script>
+</body>
+</html>
